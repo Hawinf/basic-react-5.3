@@ -8,7 +8,10 @@ const Header = (props) => {
 
     return (
         <div>
-            <Logo compName={props.compName} location={location} />
+            <Logo 
+                compName={props.compName} 
+                location={location} 
+            />
             <h1>This is Header</h1>
             <p>{props.login ? 'login' : 'please log in'} login by {props.data}</p>
             <button onClick={props.handleLogin}>{props.login ? 'log out' : 'log in'}</button>

@@ -14,7 +14,12 @@ const App = () => {
 
   return (
     <div>
-      <Header data={data} login={login} compName={compName} handleLogin={handleLogin} />
+      <Header 
+          data={data} 
+          login={login} 
+          compName={compName} 
+          handleLogin={handleLogin} 
+      />
       <h1>This is app page</h1>
     </div>
   )
