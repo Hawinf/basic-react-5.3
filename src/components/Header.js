@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "./Logo";
 
 const Header = (props) => {
 // const Header = ({data}) => (Fetching direct to value not object)
@@ -6,9 +7,9 @@ const Header = (props) => {
 
     return (
         <div>
+            <Logo compName={props.compName} />
             <h1>This is Header</h1>
-            <p>login by {props.data}</p>
-            <p>{props.login ? 'login' : 'please log in'}</p>
+            <p>{props.login ? 'login' : 'please log in'} login by {props.data}</p>
         </div>
     )
 }
