@@ -14,9 +14,8 @@ const App = () => {
 
   return (
     <div>
-      <Header data={data} login={login} compName={compName} />
+      <Header data={data} login={login} compName={compName} handleLogin={handleLogin} />
       <h1>This is app page</h1>
-      <button onClick={handleLogin}>{login ? 'log out' : 'log in'}</button>
     </div>
   )
 }
